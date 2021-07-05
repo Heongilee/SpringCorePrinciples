@@ -13,7 +13,7 @@ public class MemberServiceTest {
 
         //when (이렇게 했을때...)
         memberService.join(memberA);
-        Member findMember = memberService.findMember(2L);
+        Member findMember = memberService.findMember(1L);
 
         //then (이렇게 된다...!) <- 검증
         Assertions.assertThat(memberA).isEqualTo(findMember);
