@@ -46,9 +46,7 @@ public class ApplicationContextExtendsFindTest {
         Map<String, DiscountPolicy> beansOfType = ac.getBeansOfType(DiscountPolicy.class);
         assertThat(beansOfType.size()).isEqualTo(2);
         for (String key : beansOfType.keySet()) {
-            /*
-             * 실제 테스트코드를 짤때는 println 같은 출력문은 빼는것이 좋다.
-             */
+            // 실제 테스트코드를 짤때는 println 같은 출력문은 빼는것이 좋다.
             System.out.println("key = " + key + " value = " + beansOfType.get(key));
         }
     }
@@ -65,7 +63,6 @@ public class ApplicationContextExtendsFindTest {
             System.out.println("key = " + key + " value = " + beansOfType.get(key));
         }
     }
-
 
     @Configuration
     static class TestConfig {
